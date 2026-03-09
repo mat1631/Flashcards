@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards sobre Internet das Coisas</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <head>
+
+    <body>
+
+        <div class="toast" id="toast"></div>
+
+        <header>
+            <p class="eyebrow">Atividade Individual II · IoT</p>
+            <h1>Flashcards de revisão</h1>
+            <p class="subtitle">Vamos ver se tu está bem conectado com as tendencias atuais.</p>
+        </header>
+
+        <div class="score-row">
+            <div class="score-box">
+                <span class="lbl">Cartão</span>
+                <span class="val" id="sCard">1/10</span>
+            </div>
+            <div class="score-box s-ok">
+                <span class="lbl">Acertos</span>
+                <span class="val" id="sOk">0</span>
+            </div>
+            <div class="score-box s-err">
+                <span class="lbl">Erros</span>
+                <span class="val" id="sErr">0</span>
+            </div>
+            <div class="score-box">
+                <span class="lbl">Aproveit.</span>
+                <span class="val" id="sPct">—</span>
+            </div>
+        </div>
+
+        <div class="prog-wrap">
+            <div class="prog-track">
+                <div class="prog-fill" id="progFill" style="width:10%"></div>
+            </div>
+            <div class="prog-label" id="progLabel">1 de 10</div>
+        </div>
+
+        <div class="cat-dots">
+            <span class="cat-dot home">🏠 Smart Home</span>
+            <span class="cat-dot agri">🌱 Agricultura IoT</span>
+        </div>
+
+        <div class="arena">
+            <div class="flashcard" id="card" onclick="flipCard()">
+                <div class="face face-front" id="faceFront">
+                    <span class="face-tag" id="fTag">—</span>
+                    <div class="q-num" id="qNum">01 / 10</div>
+                    <div class="q-text" id="qText">…</div>
+                    <span class="flip-hint">clique para virar ↻</span>
+                </div>
+                <div class="face face-back">
+                    <span class="face-tag" id="bTag">—</span>
+                    <div class="a-text" id="aText">…</div>
+                    <span class="a-cat" id="aCat">—</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-row" id="btnRow">
+            <button class="ans-btn" id="btnOk" onclick="mark(true)">✓ &nbsp;Acertei</button>
+            <button class="ans-btn" id="btnErr" onclick="mark(false)">✗ &nbsp;Errei</button>
+        </div>
+
+        <div class="nav-row" id="navRow">
+            <button class="nav-btn" id="prevBtn" onclick="go(-1)" disabled>← anterior</button>
+            <button class="flip-main-btn" onclick="flipCard()">Virar cartão</button>
+            <button class="nav-btn" id="nextBtn" onclick="go(1)">próximo →</button>
+        </div>
+
+        <div class="result" id="resultWrap">
+            <div class="result-card" id="resultCard"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
