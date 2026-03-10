@@ -6,11 +6,6 @@ const CARDS = [
     },
     {
         cat: "🏠 Smart Home",
-        q: "Qual padrão de conectividade, lançado em 2022, unificou ecossistemas de casas inteligentes antes incompatíveis?",
-        a: "O padrão Matter, criado em parceria por Amazon, Apple, Google e Samsung, permitiu que dispositivos de marcas diferentes funcionassem de forma integrada no mesmo ambiente."
-    },
-    {
-        cat: "🏠 Smart Home",
         q: "Como sensores de presença contribuem para a economia de energia em uma Smart Home?",
         a: "Eles detectam automaticamente quando há pessoas nos ambientes e ajustam iluminação e climatização somente quando necessário, evitando desperdício em cômodos vazios."
     },
@@ -167,3 +162,4 @@ function toast(msg, type) {
 
 
 render();
+
