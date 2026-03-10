@@ -20,11 +20,6 @@ const CARDS = [
         a: "Geladeira inteligente: mapeia alimentos e sugere receitas com base no estoque. Lavarroupas inteligente: programa ciclos nos horários de menor tarifa de energia elétrica."
     },
     {
-        cat: "🏠 Smart Home",
-        q: "Qual é a projeção do mercado global de casas inteligentes até 2028, segundo a Statista?",
-        a: "O mercado deve atingir US$ 231 bilhões até 2028, evidenciando o enorme potencial econômico e de adoção da tecnologia Smart Home no cotidiano das pessoas."
-    },
-    {
         cat: "🌱 Agricultura IoT",
         q: "O que é Agricultura de Precisão e qual é seu principal objetivo?",
         a: "É o uso de sensores IoT, drones e big data para monitorar lavouras com extrema precisão, otimizando insumos, aumentando a produtividade e reduzindo o impacto ambiental."
@@ -169,5 +164,6 @@ function toast(msg, type) {
     el.className = `toast show t-${type}`;
     setTimeout(() => el.classList.remove('show'), 2000);
 }
+
 
 render();
